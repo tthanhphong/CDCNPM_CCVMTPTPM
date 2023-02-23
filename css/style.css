@@ -13,7 +13,7 @@ body {
     border: 1px solid white;
     height: 40px;
     width: 100%;
-    background-color: #E8E8E8;
+    background-color: #F8F8F8;
 }
 
 ul.list_1 li {
@@ -41,24 +41,122 @@ ul.list_1 {
     list-style: none;
 }
 
+ul.list_1 a:hover {
+    color: #A8A8A8;
+}
+
 .null {
-    margin-left: 10px;
+    font-size: 13px;
+    padding-bottom: 5px;
 }
 
 .logojordan {
     padding-top: 5px;
     margin: 0 auto;
     margin-left: 50px;
-    height: 30px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
+}
+
+
+/* menu */
+
+.col_menu {
+    flex: 1;
+    height: 70px;
 }
 
 .menu {
     border: 1px solid white;
     height: 70px;
     width: 100%;
-    background-color: white;
+    margin-bottom: 2px;
 }
+
+ul.menu_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.menu_1 li {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+ul.menu_1 li a {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 70px;
+}
+
+ul.menu_1 li a:hover {
+    border: 1px solid white;
+    border-bottom: 2px solid black;
+}
+
+ul.menu_1 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.menu_1 a:hover {
+    border: 1px solid black;
+}
+
+
+/* ----- */
+
+
+/* menu_2 */
+
+ul.menu_2 li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    float: right;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+ul.menu_2 li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu_2 {
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+    list-style: none;
+}
+
+ul.menu_2 a:hover {
+    color: #A8A8A8;
+}
+
+
+/* ----- */
 
 .row {
     display: flex;
@@ -83,16 +181,221 @@ ul.list_1 {
     width: 90%;
 }
 
-.main {
-    border: 1px solid white;
-    height: 200px;
-    width: 100%;
-    background-color: white;
-}
+
+/* footer */
+
+
+/* phân chia cột */
 
 .footer {
-    border: 1px solid white;
-    height: 500px;
+    position: relative;
+    flex: 1;
+    margin: 0 auto;
     width: 100%;
+    height: 250px;
     background-color: black;
 }
+
+ul.menu_footer_1 {
+    padding-top: 10%;
+    list-style: none;
+}
+
+ul.menu_footer_1 li a {
+    padding-left: 20%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+}
+
+ul.menu_footer_1 a:hover {
+    color: #A8A8A8;
+}
+
+
+/* footer_2 */
+
+ul.menu_footer_2 {
+    padding-left: 20%;
+    padding-top: 10%;
+    list-style: none;
+}
+
+ul.menu_footer_2 li a {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #A8A8A8;
+    text-decoration: none;
+    width: 100%;
+    height: 30px;
+}
+
+ul.menu_footer_2 a:hover {
+    color: white;
+}
+
+
+/* footer_3 */
+
+ul.menu_footer_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.menu_footer_3 li {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+ul.menu_footer_3 li a {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 122px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 70px;
+}
+
+ul.menu_footer_3 a:hover {
+    color: white;
+}
+
+
+/* -- *
+/* --- */
+
+
+/* sidebar */
+
+#main {
+    margin: 0 auto;
+    border: 1px solid white;
+    height: auto;
+    width: 90%;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    background: white;
+    border: 1px solid white;
+    height: 390px;
+    width: 15%;
+    margin-top: 10px;
+    float: left;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+.sidebar ul a {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    color: #383838;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: 0.5s;
+}
+
+.sidebar li:hover a {
+    padding-left: 70px;
+    color: #A8A8A8;
+    background-color: #F8F8F8;
+    border-radius: 10%;
+}
+
+.maincontent {
+    border: 1px solid #FFFFFF;
+    height: auto;
+    width: 82%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+
+ul.product_lits {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+ul.product_lits li {
+    width: 24%;
+    border: 1px solid #FFFFFF;
+    margin: 5px;
+    float: left;
+}
+
+ul.product_lits li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+ul.product_lits li a .price_product {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+ul.product_lits li img {
+    position: relative;
+    background-color: #F8F8F8;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ul.product_lits li p {
+    margin: 0 auto;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+ul.product_lits li img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* -- *

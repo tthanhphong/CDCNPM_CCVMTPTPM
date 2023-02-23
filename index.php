@@ -7,62 +7,22 @@
 	
 	<title>Shop Bán Giầy</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
 	<div class="wrapper">
-		<!-- header -->
-		<div class="header">
-			<div class="row">
-					<div class="col">
-						<a href="#"><img src="images/logojordan.png" alt="" class="logojordan"></a>
-					</div>
-					<div class="col">
-						<ul class="list_1">
-							<li><a href="#">Đăng Nhập</a></li>
-							<li><a href="#">Địa Chỉ<span class="null">|</span></a></li>
-							<li><a href="#">Trợ Giúp<span class="null">|</span></a></li>
-							<li><a href="#">Chúng Tôi<span class="null">|</span></a></li>
-						</ul>
-					</div>
-				</div>
-		</div>
-		<!-- menu -->
-		<div class="menu">
-			<div class="row">
-				<div class="col">
-					<a href="#"><img src="images/logo.png" alt="" class="logo"></a>
-				</div>
-				<div class="col">
-					<ul>
-						<li><a href="#">Trang Chủ</a></li>
-						<li><a href="#">Đàn Ông</a></li>
-						<li><a href="#">Phụ Nữ</a></li>
-						<li><a href="#">Trẻ Em</a></li>
-						<li><a href="#">Sale</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul>
-						<li><a href="#">Trang Chủ</a></li>
-						<li><a href="#">Đàn Ông</a></li>
-						<li><a href="#">Phụ Nữ</a></li>
-						<li><a href="#">Trẻ Em</a></li>
-						<li><a href="#">Sale</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<?php 
+			include("pages/header.php");
+			include("pages/menu.php");
+		?>
 		<!-- banner -->
-		<img src="images/banner1.gif" alt="" class="banner">
-
-		<!-- main -->
-		<div class="main">
-			<p>main</p>
-		</div>
-		<!-- footer -->
-		<div class="footer">
-			<p>footer</p>
-		</div>
+		<img src="images/banner1.gif" alt="" class="banner" style=" display: block; position: relative;">
+		<!-- end banner -->
+		<?php 
+			include("pages/main.php");
+			include("pages/footer.php");
+		?>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
