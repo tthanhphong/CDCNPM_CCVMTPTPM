@@ -63,14 +63,15 @@ ul.list_1 a:hover {
 
 .col_menu {
     flex: 1;
-    height: 70px;
+    height: 60px;
 }
 
 .menu {
+    position: relative;
     border: 1px solid white;
-    height: 70px;
+    height: 60px;
     width: 100%;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 ul.menu_1 {
@@ -86,7 +87,7 @@ ul.menu_1 li {
     justify-content: center;
     display: inline-block;
     width: 100px;
-    height: 70px;
+    height: 60px;
     text-align: center;
     margin: 0 10px;
 }
@@ -102,7 +103,7 @@ ul.menu_1 li a {
     color: black;
     text-decoration: none;
     width: 100%;
-    height: 70px;
+    height: 60px;
 }
 
 ul.menu_1 li a:hover {
@@ -131,7 +132,7 @@ ul.menu_2 li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 60px;
     float: right;
     padding-left: 10px;
     margin: 0 auto;
@@ -163,14 +164,15 @@ ul.menu_2 a:hover {
 }
 
 .logo {
+    margin: 0 auto;
     display: block;
     margin-left: 50px;
-    width: 15%;
+    width: 13%;
 }
 
 .col {
     flex: 1;
-    height: 40px;
+    height: 60px;
 }
 
 .banner {
