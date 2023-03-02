@@ -6,7 +6,7 @@ $tenloaisp = $_POST['tendanhmuc'];
 $thutu = $_POST['thutu'];
 if(isset($_POST['themdanhmuc'])){
     //thêm danh mục sản phẩm
-    $sql_them = "INSERT INTO tbl_danhmuc(tendanhmuc,thutu) VALUE('".$tenloaisp."','".$thutu."')";
+    $sql_them = "INSERT INTO tbl_danhmuc(tendanhmuc,thutu) VALUES('".$tenloaisp."','".$thutu."')";
     mysqli_query($mysqli,$sql_them);
     header('Location:../../index.php?action=quanlydanhmucsanpham&query=them');
 }else if(isset($_POST['suadanhmuc'])){
