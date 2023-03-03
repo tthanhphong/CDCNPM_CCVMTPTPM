@@ -2,7 +2,7 @@
 <div class="header">
     <div class="row">
             <div class="col">
-                <a href="#"><img src="images/logojordan.png" alt="" class="logojordan"></a>
+                <a href="index.php"><img src="images/logojordan.png" alt="" class="logojordan"></a>
             </div>
             <div class="col">
                 <ul class="list_1">

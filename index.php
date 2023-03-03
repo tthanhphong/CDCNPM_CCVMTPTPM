@@ -12,11 +12,12 @@
 <body>
 	<div class="wrapper">
 		<?php 
+			include("admincp/config/config.php");
 			include("pages/header.php");
 			include("pages/menu.php");
 		?>
 		<!-- banner -->
-		<img src="images/banner1.gif" alt="" class="banner" style=" display: block; position: relative;">
+		<!-- <img src="images/banner1.gif" alt="" class="banner" style=" display: block; position: relative;"> -->
 		<!-- end banner -->
 		<?php 
 			include("pages/main.php");

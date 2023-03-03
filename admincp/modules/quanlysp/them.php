@@ -32,6 +32,22 @@
                 <td><textarea name="noidung" id="" cols="30" rows="10"style="resize: none;"></textarea></td>
             </tr>
             <tr>
+                <td>Danh Mục Sản Phẩm</td>
+                <td>
+                    <select name="id_danhmuc">
+                        <?php 
+                        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+                        $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
+                        while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
+                        ?>
+                        <option value="<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></option>
+                        <?php
+                        }
+                        ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td>Tình Trạng</td>
                 <td>
                     <select name="tinhtrang">
@@ -39,10 +55,6 @@
                         <option value="0">Ẩn</option>
                     </select>
                 </td>
-            </tr>
-            <tr>
-                <td>ID Danh Mục</td>
-                <td><input type="text" name="id_danhmuc" id="" required></td>
             </tr>
             <tr>    
                 <td colspan="2"><input type="submit" name="themsanpham" value="Thêm Sản Phẩm" id="" ></td>
