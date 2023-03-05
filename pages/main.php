@@ -19,6 +19,8 @@
                 include("pages/main/timkiem.php");
             }else if($tam == 'giohang'){
                 include("pages/main/giohang.php");
+            }else if($tam == 'sanpham'){
+                include("pages/main/sanpham.php");
             }else{
                 include("pages/main/index.php");
             }
