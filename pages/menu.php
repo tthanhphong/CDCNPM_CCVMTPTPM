@@ -6,9 +6,8 @@
 <div class="menu">
     <div class="row">
         <div class="col">
-            <a href="index.php"><img src="images/logo.png" alt="" class="logo"></a>
+            <a href="index.php"><img src="pages/images/logo.png" alt="" class="logo"></a>
         </div>
-        
         <!-- Thanh chức năng chính của trang web -->
         <div class="col_menu">
             <ul class="menu_1">

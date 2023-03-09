@@ -1,4 +1,4 @@
-<p>Thêm Danh Mục Sản Phẩm</p>
+<p>Thêm Sản Phẩm</p>
 <div class="table_add"> 
      <table border="1" width="50%" style="border-collapse: collapse;">
      <!-- hình ảnh khi gửi file qua form theo phương thức post thêm dòng enctype="multipart/form-data" -->

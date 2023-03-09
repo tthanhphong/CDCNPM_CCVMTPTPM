@@ -15,10 +15,14 @@
 			include("admincp/config/config.php");
 			include("pages/header.php");
 			include("pages/menu.php");
+
 		?>
         <!-- form giỏ hàng -->
             <?php 
                 session_start();
+				if(isset($_SESSION['dangky'])){
+					echo 'xin chào'.'<span>'.$_SESSION['dangky'].'</span>';
+				}
             ?>
             <p>GIỎ HÀNG</p>
             <?php 
@@ -70,6 +74,19 @@
 				<td colspan="8">
 					<p style="float: left;">Tổng Tiền: <?php echo number_format($tongtien,0,',','.').'₫' ?></p>
 					<p style="float: right;"><a href="themgiohang.php?xoatatca=1">Xóa Tất Cả</a></p>
+					<div style="clear: both;"></div>
+					<?php 
+						if(isset($_SESSION['dangky'])){
+					?>
+					<p><a href="#">Đặt Hàng</a></p>
+					<?php
+						}else{
+					?>
+					<p><a href="#">Đăng Ký Để Đặt Hàng</a></p>
+					<?php
+						}
+					
+					?>
 				</td>
 			</tr>
 			<?php 
@@ -83,21 +100,10 @@
 			?>
 			</table>
 
-
-
-
-
-
-
-
-
-
-
              <!-- end form giỏ hàng -->
 		<?php
 			include("pages/footer.php");
 		?>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+	</body>
 </html>
