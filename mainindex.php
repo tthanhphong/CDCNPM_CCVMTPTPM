@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<?php 
+		<?php
 			include("admincp/config/config.php");
 			include("pages/header.php");
 			include("pages/menu.php");

@@ -10,7 +10,6 @@
     if($count > 0){
       $_SESSION['dangnhap'] = $taikhoan;
       header("Location:index.php");
-      
     }else{
       echo "<script>alert('Tài Khoản Hoặc Mật Khẩu Không Đúng, Vui Lòng Nhập Lại..');</script>";
       header('window.location:login.php');
@@ -39,7 +38,7 @@
 <section class="text-center">
   <!-- Background image -->
   <div class="p-6 bg-image" style="
-        background-image: url('/images/banner1.gif');
+        background-image: url('modules/quanlysp/uploads/banner1.gif');
         height: 300px;
         width: 100%;
         "></div>
@@ -54,9 +53,8 @@
         ">
     <div class="card-body py-2 px-md-3">
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-8" style="width: 100%; padding: 0;">
+        <div class="col-lg-8" style="width: 70%; padding: 0;">
           <h2 class="fw-bold mb-4">Admin Control Panel</h2>
-          
             <!-- Email input -->
             <div class="form-outline mb-4">
               <input type="email" id="form3Example3" name="username" class="form-control" required/>

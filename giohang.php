@@ -19,9 +19,9 @@
 		?>
         <!-- form giỏ hàng -->
             <?php 
-                session_start();
 				if(isset($_SESSION['dangky'])){
-					echo 'xin chào'.'<span>'.$_SESSION['dangky'].'</span>';
+					echo ' Xin Chào! '.'<span>'.$_SESSION['dangky'].'</span>';
+					echo ' Xin Chào! '.'<span>'.$_SESSION['id_khachhang'].'</span>';
 				}
             ?>
             <p>GIỎ HÀNG</p>
@@ -78,11 +78,11 @@
 					<?php 
 						if(isset($_SESSION['dangky'])){
 					?>
-					<p><a href="#">Đặt Hàng</a></p>
+					<p><a href="thanhtoan.php">Đặt Hàng</a></p>
 					<?php
 						}else{
 					?>
-					<p><a href="#">Đăng Ký Để Đặt Hàng</a></p>
+					<p><a href="dangky.php">Đăng Ký Để Đặt Hàng</a></p>
 					<?php
 						}
 					

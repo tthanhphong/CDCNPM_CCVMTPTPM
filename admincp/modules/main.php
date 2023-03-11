@@ -18,6 +18,10 @@
             include("modules/quanlysp/lietke.php");
         }elseif($tam == 'quanlysanpham' && $query == 'sua'){
             include("modules/quanlysp/sua.php");    
+        }elseif($tam == 'quanlydonhang' && $query == 'lietke'){//quản lý đơn hàng
+            include("modules/quanlydonhang/lietke.php");    
+        }elseif($tam == 'donhang' && $query == 'xemdonhang'){//quản lý đơn hàng
+            include("modules/quanlydonhang/xemdonhang.php");    
         }else{
             include("modules/dashboard.php");
         }

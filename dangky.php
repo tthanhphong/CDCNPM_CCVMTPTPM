@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<title>Shop Bán Giầy</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
     <!-- Font Awesome -->
@@ -22,12 +21,19 @@
             color: white; padding: 5px; 
             width: 100%;
         }
+        .lable{
+            display: flex;
+            float: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-top: -5px;
+            color: #a9a9a9;
+        }
     </style>
 </head>
 <body>
 	<div class="wrapper">
 		<?php 
-            session_start();
 			include("admincp/config/config.php");
 			include("pages/header.php");
 			include("pages/menu.php");
@@ -41,8 +47,10 @@
                 $sql_dangky = mysqli_query($mysqli, "INSERT INTO tbl_dangky(tenkhachhang,email,diachi,matkhau,dienthoai)VALUES('".$tenkhachhang."', 
                 '".$email."','".$diachi."','".$matkhau."','".$diachi."')");
                if($sql_dangky){
-                    echo'<p style="color:green">Bạn đăng ký tài khoản thành công.</p>';
+                    echo'<p style="color:green;">Bạn đăng ký tài khoản thành công.</p>';
                     $_SESSION['dangky'] = $tenkhachhang;
+                    $_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
+                    header('Location:giohang.php');
                }
             }
 		?>
@@ -68,7 +76,7 @@
             <div class="card-body py-2 px-md-3" >
             <div class="row d-flex justify-content-center" style="padding-bottom: 100px;">
                 <div class="col-lg-8" style="width: 50%; padding: 0;">
-                <img src="pages/images/logo.png" alt="logonike" style="width: 100%s; height: 50px;">
+                <img src="pages/images/logo.png" alt="logonike" style="width: 50px; height: 50px;">
                 <h4 class="fw-bold mb-4S">ĐĂNG KÝ TÀI KHOẢN</h4>
                     <!-- họ tên input -->
                     <div class="form-outline mb-4">
@@ -95,6 +103,13 @@
                     <input type="password" id="form3Example4" name="matkhau" class="form-control" required/>
                     <label class="form-label" for="form3Example4">Password</label>
                     </div>
+                    <!-- đăng nhập nếu có tài khoản và quên mật khẩu -->
+                    <div class="form-outline mb-4">
+                        <div class="lable">
+                            <a href="dangnhap.php"><p class="lable" style="padding-right: 100px; text-decoration: underline;">Đăng Nhập Nếu Có Tài Khoản!</p></a>
+                            <a href="#"><p class="lable"style="padding-right: 10px;">Quên Mật Khẩu?</p></a>
+                        </div>
+                    </div>
                     <!-- Submit button -->
                     <button class="btn-dangky" type="submit" name="dangky" value="Đăng Ký" >ĐĂNG KÝ</button>
 
@@ -102,14 +117,13 @@
                         QUÊN MẬT KHẨU 
                     </button> -->
 
-
                 </div>
             </div>
             </div>
         </div>
         </section>
         </form>
-<!-- Section: Design Block -->
+        <!-- Section: Design Block -->
         <!-- end formđăng ký -->
 		<?php
 			include("pages/footer.php");

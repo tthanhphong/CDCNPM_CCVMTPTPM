@@ -1,6 +1,18 @@
 <?php 
+    if(isset($_GET['trang'])){
+        $page = $_GET['trang'];
+    }else{
+        $page = 1;
+    }
+    if($page == '' || $page == 1){
+        $begin = 0;
+    }else{
+        $begin = ($page * 3) - 3;
+    }
+
     $sql_pro = "SELECT * FROM tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc
-    ORDER BY tbl_sanpham.id_sanpham DESC LIMIT 25";
+    ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,3";
+    //$begin là số sản phẩm bắt đầu và số 3 ở trên là số lượng sản phẩm cần hiển thị(lấy).
     $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
 <h5 style="text-align: center;
@@ -30,4 +42,39 @@
     }
     ?>
 </ul> 
-    
+    <div style="clear: both;"></div>
+    <style type="text/css">
+        ul.list_trang{
+            height: 0;
+            list-style: none;  
+        }
+        ul.list_trang li{
+           float: left;
+           padding: 5px 13px;
+           margin: 5px;
+           background: #a9a9a9;
+           display: block;
+        }
+        ul.list_trang li a{
+           color: #ffffff;
+           text-align: center;
+           text-decoration: none;
+        }
+    </style>
+    <!-- Xử lý số trang tùy theo số lượng sản phẩm -->
+    <?php 
+        $sql_trang = mysqli_query($mysqli,"SELECT * FROM tbl_sanpham");
+        $row_count = mysqli_num_rows($sql_trang);
+        // hàm làm tròn ceil();
+        $trang = ceil($row_count/3);
+    ?>
+    <p>Trang Hiện Tại <?php echo $page ?>/<?php echo $trang ?></p>
+    <ul class="list_trang">
+        <?php 
+            for($i=1; $i<=$trang; $i++){
+        ?>
+            <li <?php if($i == $page){echo 'style="background: black"';}else{ echo '';} ?>> <a href="index.php?trang=<?php echo $i; ?>"><?php echo $i ?></a></li>
+        <?php
+            }
+        ?>
+    </ul>

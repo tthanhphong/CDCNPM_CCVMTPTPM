@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+    $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
+?>
+<?php 
+    if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
+        unset($_SESSION['dangky']);
+        header('Location:mainindex.php');
+        exit();
+    }
+?>
 <!-- header -->
 <div class="header">
     <div class="row">
@@ -6,9 +18,22 @@
             </div>
             <div class="col">
                 <ul class="list_1">
-                    <li><a href="#">Đăng Nhập</a></li>
+                    <?php 
+                        if(isset($_SESSION['dangky'])){
+                    ?>  
+                    <li><a href="giohang.php?dangxuat=1">Đăng Xuất</a></li>
+                    <li class="null">|</li>
+                    <li><a href="thaydoimatkhau.php">Thay Đổi Mật Khẩu</a></li>
+                    <?php
+                        }else{
+                    ?>
+                    <li><a href="dangnhap.php">Đăng Nhập</a></li>
                     <li class="null">|</li>
                     <li><a href="dangky.php">Đăng Ký</a></li>
+                    <?php
+                        }
+                    ?>
+                   
                     <li class="null">|</li>
                     <li><a href="#">Địa Chỉ</a></li>
                     <li class="null">|</li>

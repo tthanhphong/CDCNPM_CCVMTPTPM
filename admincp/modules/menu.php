@@ -13,6 +13,9 @@
     <li><a href="index.php?action=quanlybaiviet&query=them">Quản Lý Bài Viết</a></li>
     <li><p class="null">|</p></li>
     <li><a href="index.php?action=quanlydanhmucbaiviet&query=them">Quản Lý Danh Mục Bài Viết</a></li>
+    <li><p class="null">|</p></li>
+    <li><a href="index.php?action=quanlydonhang&query=lietke">Quản Lý Đơn Hàng</a></li>
+    <li><p class="null">|</p></li>
     <li><a href="index.php?dangxuat=1" style="margin-left:500px;">Đăng Xuất</a></li>
 </ul>
 </ul>

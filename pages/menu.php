@@ -17,10 +17,7 @@
                 ?>
                     <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row_danhmuc['id_danhmuc'] ?>">
                     <?php echo $row_danhmuc['tendanhmuc'] ?></a></li>
-                    
-                
                 <?php
-  
                 }
                 ?>
             </ul>
@@ -30,7 +27,12 @@
             <ul class="menu_2"> 
                 <li><a href="giohang.php">Giỏ Hàng</a></li>
                 <li><a href="index.php?quanly=lienhe">Liên Hệ</a></li>
-                <li><a href="index.php?quanly=timkiem">Tìm Kiếm</a></li>
+                <li>
+                    <form action="index.php?quanly=timkiem" method="post">
+                        <input type="text" placeholder="Tìm Kiếm Sản Phẩm..." name="tukhoa" required>
+                        <input type="submit" name="timkiem" value="Tìm Kiếm" required>
+                    </form>
+                </li>
             </ul>
         </div>
     </div>
