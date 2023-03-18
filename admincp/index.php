@@ -25,5 +25,13 @@
                     include("modules/footer.php");
                 ?>
         </div>
+
+
+        <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+        <!-- Trình soạn thảo văn bản ckeditor -->
+        <script>
+                CKEDITOR.replace('noidung');
+                CKEDITOR.replace('tomtat');
+        </script>
 </body>
 </html>

@@ -37,7 +37,7 @@
                     <li class="null">|</li>
                     <li><a href="#">Địa Chỉ</a></li>
                     <li class="null">|</li>
-                    <li><a href="#">Trợ Giúp</a></li>
+                    <li><a href="tintuc.php?id=1">Tin Tức</a></li>
                     <li class="null">|</li>
                     <li><a href="#">Chúng Tôi</a></li>
                 </ul>

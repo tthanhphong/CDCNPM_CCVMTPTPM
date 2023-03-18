@@ -43,7 +43,7 @@
                 $sql_update = mysqli_query($mysqli,"UPDATE tbl_dangky SET matkhau = '".$matkhau_moi."'");
                 echo '<p style="color: green; position: relative;">Mật Khẩu Đã Được Thay Đổi</p>';
                 }else{
-                echo "<script>alert('Mật Khẩu Cũ Không Trùng Khớp, Vui Lòng Nhập Lại..');</script>";
+                echo '<p style="color: red; position: relative;">Mật Khẩu Cũ Không Trùng Khớp, Vui Lòng Nhập Lại..</p>';
                 }
             }
 		?>

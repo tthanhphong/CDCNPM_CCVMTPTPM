@@ -16,6 +16,6 @@
     <li><p class="null">|</p></li>
     <li><a href="index.php?action=quanlydonhang&query=lietke">Quản Lý Đơn Hàng</a></li>
     <li><p class="null">|</p></li>
-    <li><a href="index.php?dangxuat=1" style="margin-left:500px;">Đăng Xuất</a></li>
+    <li><a href="index.php?dangxuat=1">Đăng Xuất</a></li>
 </ul>
 </ul>
