@@ -28,7 +28,7 @@
                 <li><a href="giohang.php">Giỏ Hàng</a></li>
                 <li><a href="index.php?quanly=lienhe">Liên Hệ</a></li>
                 <li>
-                    <form action="index.php?quanly=timkiem" method="post">
+                    <form class="btn" action="index.php?quanly=timkiem" method="post" >
                         <input type="text" placeholder="Tìm Kiếm Sản Phẩm..." name="tukhoa" required>
                         <input type="submit" name="timkiem" value="Tìm Kiếm" required>
                     </form>

@@ -31,24 +31,24 @@
 					<div class="container">
 						<!-- Responsive Arrow Progress Bar -->
 						<div class="arrow-steps clearfix">
-							<div class="step current"> <span><a href="giohang.php">Giỏ hàng</a></span></div>
-							<div class="step"> <span><a href="vanchuyen.php" >Vận chuyển</a></span> </div>
-							<div class="step"> <span><a href="thongtinthanhtoan.php" >Thanh toán</a><span> </div>
-							<div class="step"> <span><a href="donhangdadat.php" >Lịch sử đơn hàng</a><span> </div>
+							<div class="step done"> <span><a href="giohang.php">Giỏ hàng</a></span></div>
+							<div class="step done"> <span><a href="vanchuyen.php" >Vận chuyển</a></span> </div>
+							<div class="step done"> <span><a href="thongtinthanhtoan.php" >Thanh toán</a><span> </div>
+							<div class="step current"> <span><a href="donhangdadat.php" >Lịch sử đơn hàng</a><span> </div>
 						</div>
 					</div>
 				<br>
-				<table style="width: 100%; text-align: center;">
-				<tr style="border: 1px solid black; border-collapse: collapse;">
-					<th>ID</th>
-					<th>Mã Sản Phẩm</th>
-					<th>Tên Sản Phẩm</th>
-					<th>Hình Ảnh</th>
-					<th>Số Lượng</th>
-					<th>Giá Sản Phẩm</th>
-					<th>Thành Tiền</th>
-					<th>Quản Lý</th>
-				</tr>
+					<table style="width: 100%; text-align: center;">
+					<tr style="border: 1px solid black; border-collapse: collapse;">
+						<th>ID</th>
+						<th>Mã Sản Phẩm</th>
+						<th>Tên Sản Phẩm</th>
+						<th>Hình Ảnh</th>
+						<th>Số Lượng</th>
+						<th>Giá Sản Phẩm</th>
+						<th>Thành Tiền</th>
+						<th>Quản Lý</th>
+					</tr>
                <?php 
 			   }
             ?>
@@ -88,14 +88,11 @@
 					<?php 
 						if(isset($_SESSION['dangky'])){
 					?>
-					<p><button style=" background-color: #5599e5; border-radius: 10px; border: 1px solid white; padding: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
-					<a href="vanchuyen.php" style="padding:20px;
-					text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif;  color: white;">
-					Hình Thức Vận Chuyển</a></button></p>
+					<p><button style=" background-color: #5599e5; border-radius: 10px; border: 1px solid white; padding: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;"><a href="thanhtoan.php" style="padding-left: 10px; padding-right: 10px; text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif;  color: white;">Đặt Hàng</a></button></p>
 					<?php
 						}else{
 					?>
-					<p><button style=" background-color: #5599e5; border-radius: 10px; border: 1px solid white; padding: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;"><a href="dangky.php" style="padding-left: 10px; padding-right: 10px; text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif;  color: white;">Đăng Ký Để Đặt Hàng</a></button></p>
+					<p><a href="dangky.php">Đăng Ký Để Đặt Hàng</a></p>
 					<?php
 						}
 					

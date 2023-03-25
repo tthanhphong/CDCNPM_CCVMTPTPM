@@ -8,7 +8,6 @@
   	<th>Id</th>
     <th>Tên danh mục</th>
   	<th>Quản lý</th>
-  
   </tr>
   <?php
   $i = 0;
