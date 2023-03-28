@@ -39,7 +39,7 @@
   <div class="arrow-steps clearfix">
     <div class="step done"> <span> <a href="giohang.php" >Giỏ hàng</a></span> </div>
     <div class="step current"> <span><a href="vanchuyen.php" >Vận chuyển</a></span> </div>
-    <div class="step"> <span><a href="thongtinthanhtoan" >Thanh toán</a><span> </div>
+    <div class="step"> <span><a href="thongtinthanhtoan.php" >Thanh toán</a><span> </div>
     <div class="step"> <span><a href="donhangdadat.php" >Lịch sử đơn hàng</a><span> </div>
   </div>
   <?php
@@ -155,8 +155,8 @@
     	<?php echo $cart_item['soluong']; ?>
     	<!-- <a href="pages/main/themgiohang.php?tru=<?php echo $cart_item['id'] ?>"><i class="fa fa-minus fa-style" aria-hidden="true"></i></a> -->
     </td>
-    <td><?php echo number_format($cart_item['giasp'],0,',','.').'vnđ'; ?></td>
-    <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
+    <td><?php echo number_format($cart_item['giasp'],0,',','.').'₫'; ?></td>
+    <td><?php echo number_format($thanhtien,0,',','.').'₫' ?></td>
     
   </tr>
   <?php
@@ -164,7 +164,7 @@
   ?>
    <tr>
     <td colspan="8">
-    	<p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p><br/>
+    	<p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').'₫' ?></p><br/>
     	 
 </table>
 </div>

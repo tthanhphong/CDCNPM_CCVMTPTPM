@@ -31,5 +31,6 @@
 		<h1>Thông báo mua sản phẩm thành công</h1>
 		<p>Cảm ơn bạn đã mua sản phẩm của chúng tôi. Đơn hàng của bạn đã được xử lý thành công.</p> 
 	</div>
+    <button style="background-color: #a9a9a9; border: 1px solid white; padding: 10px; border-radius: 10px; display: flex; position: absolute; margin-left: 44%;"><a href="mainindex.php" style="text-decoration: none; color: white;">Click Để Trở Về Trang Chủ</a></button>
 </body>
 </html>
