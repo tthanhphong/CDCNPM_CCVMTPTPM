@@ -26,7 +26,7 @@
             ?>
             <p>Hình thức thanh toán</p>
 <div class="container">
-  <!-- Responsive Arrow Progress Bar -->s
+  <!-- Responsive Arrow Progress Bar -->
   <?php
   if(isset($_SESSION['id_khachhang'])){
   ?>
@@ -34,7 +34,7 @@
   <div class="step done"> <span> <a href="giohang.php" >Giỏ hàng</a></span> </div>
     <div class="step done"> <span><a href="vanchuyen.php" >Vận chuyển</a></span> </div>
     <div class="step current"> <span><a href="thongtinthanhtoan.php" >Thanh toán</a><span> </div>
-    <div class="step"> <span><a href="donhangdadat.php" >Lịch sử đơn hàng</a><span> </div>
+    <div class="step"> <span><a href="lichsudonhang.php" >Lịch sử đơn hàng</a><span> </div>
   </div>
   <?php
   } 
@@ -178,21 +178,21 @@
 		<input type="hidden" name="" value="<?php echo $tongtien_usd ?>" id="tongtien">
 		<div id="paypal-button"></div>
 
-		<!-- <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
-                          action="pages/main/xulythanhtoanmomo.php">
+		<form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="xulythanhtoanmomo.php">
             <input type="hidden" value="<?php echo $tongtien_vnd ?>" name="tongtien_vnd">              	
 			<input type="submit" name="momo" value="Thanh toán MOMO QRcode" class="btn btn-danger">
 
-		</form> -->
+		</form>
 
 		<p></p>
 		
-		<!-- <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
-                          action="pages/main/xulythanhtoanmomo_atm.php">
+		<form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="xulythanhtoanmomo_atm.php">
 		<input type="hidden" value="<?php echo $tongtien_vnd ?>" name="tongtien_vnd">        
 		<input type="submit" name="momo" value="Thanh toán MOMO ATM" class="btn btn-danger">
 
-		</form> -->
+		</form>
 		<p></p>
 		<!-- <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
                           action="pages/main/onepay.php">

@@ -24,6 +24,8 @@
                     <li><a href="giohang.php?dangxuat=1">Đăng Xuất</a></li>
                     <li class="null">|</li>
                     <li><a href="thaydoimatkhau.php">Thay Đổi Mật Khẩu</a></li>
+                    <li class="null">|</li>                 
+                    <li><a href="lichsudonhang.php">Lịch Sử Đơn Hàng</a></li>
                     <?php
                         }else{
                     ?>
@@ -34,8 +36,7 @@
                         }
                     ?>
                    
-                    <li class="null">|</li>
-                    <li><a href="#">Địa Chỉ</a></li>
+                    
                     <li class="null">|</li>
                     <li><a href="tintuc.php?id=1">Tin Tức</a></li>
                     <li class="null">|</li>

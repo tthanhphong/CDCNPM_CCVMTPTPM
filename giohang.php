@@ -34,7 +34,7 @@
 							<div class="step current"> <span><a href="giohang.php">Giỏ hàng</a></span></div>
 							<div class="step"> <span><a href="vanchuyen.php" >Vận chuyển</a></span> </div>
 							<div class="step"> <span><a href="thongtinthanhtoan.php" >Thanh toán</a><span> </div>
-							<div class="step"> <span><a href="donhangdadat.php" >Lịch sử đơn hàng</a><span> </div>
+							<div class="step"> <span><a href="lichsudonhang.php" >Lịch sử đơn hàng</a><span> </div>
 						</div>
 					</div>
 				<br>
