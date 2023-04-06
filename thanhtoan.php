@@ -33,6 +33,7 @@
 					mysqli_query($mysqli,$insert_order_detail);
 				}
 			}
+			
 			unset($_SESSION['cart']);
 			header('Location:camon.php');
 

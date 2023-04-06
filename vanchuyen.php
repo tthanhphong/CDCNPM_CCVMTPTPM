@@ -111,12 +111,12 @@
 	  <?php
 	  if($name=='' && $phone=='') {
 	  ?>
-	  <button style="margin: 10px; background-color: #5599e5;" type="submit" name="themvanchuyen" class="btn btn-primary">Thêm vận chuyển</button>
+	  <button style="margin: 10px; background-color: #5599e5;" type="submit" name="themvanchuyen" class="btn btn-primary">Thêm Vận Chuyển</button>
 
 	  <?php
 	  } elseif($name!='' && $phone!=''){
 	  ?>
-	  <button style="margin: 10px;" type="submit" name="capnhatvanchuyen" class="btn btn-success">Cập nhật vận chuyển</button>
+	  <button style="margin: 10px;" type="submit" name="capnhatvanchuyen" class="btn btn-success">Cập Nhật Vận Chuyển</button>
 	  <?php
 	  } 
 	  ?>

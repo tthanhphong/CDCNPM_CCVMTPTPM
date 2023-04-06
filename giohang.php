@@ -24,7 +24,7 @@
 					echo ' Xin Chào! '.'<span>'.$_SESSION['id_khachhang'].'</span>';
 				}
             ?>
-            <p>GIỎ HÀNG</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; color: black;">GIỎ HÀNG</p>
             <?php 
                 if(isset($_SESSION['cart'])){
 					?>
@@ -72,7 +72,6 @@
 					<?php echo $cart_item['soluong'] ?>
 					<a style="text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif;  color: black;" href="themgiohang.php?tru=<?php echo $cart_item['id'] ?>">Trừ</a>
 				</td>
-
 				<td><?php echo number_format($cart_item['giasp'],0,',','.').'₫' ?></td>
 				<td><?php echo number_format($thanhtien,0,',','.').'₫' ?></td>
 				<td><a style="text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif;  color: black;" href="themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xóa</a></td>
@@ -106,7 +105,7 @@
 			}else{
 			?>
 			<tr>
-			<td colspan="8"><p>Hiện Tại Giỏ Hàng Đang Trống</p></td>
+			<td colspan="8"><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; color: black;">Hiện Tại Giỏ Hàng Đang Trống</p></td>
 			</tr>
 			<?php
 			}

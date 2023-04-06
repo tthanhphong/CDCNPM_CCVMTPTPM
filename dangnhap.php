@@ -51,10 +51,11 @@
                 $_SESSION['dangky'] = $row_data['tenkhachhang'];
                 $_SESSION['id_khachhang'] = $row_data['id_dangky'];
                 header("Location:giohang.php");
+
                 }else{
                 header("window.location:dangnhap.php");
                 echo "<script>alert('Tài Khoản Hoặc Mật Khẩu Không Đúng, Vui Lòng Nhập Lại..');</script>";
-               
+                
                 }
             }
 		?>

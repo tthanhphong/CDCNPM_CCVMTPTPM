@@ -36,7 +36,7 @@
 							<div class="fs-5 mb-3">
 								<p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-style: normal;"><?php echo $row_chitiet['tendanhmuc'] ?></p>
 							</div>
-								<p><?php echo number_format($row_chitiet['giasp'],0,',','.').'đ' ?></p>
+								<p><?php echo number_format($row_chitiet['giasp'],0,',','.').'₫' ?></p>
 								<p><?php echo $row_chitiet['noidung'] ?></p>
 							<div class="d-flex">
 								<!-- <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" /> -->
