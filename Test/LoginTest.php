@@ -65,7 +65,6 @@
             // Khởi tạo tên đăng nhập và mật khẩu không hợp lệ
             $email = '';
             $matkhau = '123';
-    
             // Tạo đối tượng đăng nhập và gọi phương thức đăng nhập với thông tin đăng nhập không hợp lệ
             $login = new Login($this->conn);
             $result = $login->authenticate($email, $matkhau);
